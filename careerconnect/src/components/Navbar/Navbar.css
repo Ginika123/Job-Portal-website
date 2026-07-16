@@ -1,0 +1,116 @@
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: #000;
+  position: relative;
+  z-index: 10;
+}
+
+
+
+.logo h2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: yellow;
+}
+
+
+
+.btn {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn button {
+  padding: 10px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: rgb(247, 78, 78);
+  color: white;
+  transition: 0.3s;
+}
+
+.btn button:hover {
+  background-color: white;
+  color: black;
+}
+
+
+
+.menu-icon {
+  display: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 20px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    background: black;
+    flex-direction: column;
+    gap: 25px;
+    padding: 30px 0;
+    transition: 0.4s;
+  }
+
+  .nav-links.active {
+  left: 0;
+}
+
+  .btn {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .btn button {
+    width: 100%;
+  }
+}

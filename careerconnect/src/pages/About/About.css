@@ -1,0 +1,248 @@
+/* ABOUT HERO SECTION */
+.about {
+  width: 100%;
+  padding: 120px 40px 80px;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+/* CONTAINER */
+.about .container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* TITLE */
+.about .about1 {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+/* TEXT */
+.about .about2 {
+  color: white;
+  font-size: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.about-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 3rem;
+}
+
+/* BUTTON 1 */
+.browse-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.browse-btn:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-3px);
+}
+
+/* BUTTON 2 */
+.contact-btn {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.contact-btn:hover {
+  background: white;
+  color: #1e3a8a;
+  transform: translateY(-3px);
+}
+
+/* STORY SECTION */
+.story {
+  width: 100%;
+  padding: 80px 40px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.story .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.story h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #1e293b;
+  margin-bottom: 30px;
+}
+
+.story-text {
+  max-width: 850px;
+  margin: auto;
+  font-size: 20px;
+  line-height: 1.8;
+  text-align: center;
+  color: black;
+}
+
+/* MISSION SECTION */
+/* ===========================
+   MISSION SECTION
+=========================== */
+
+.mission-section {
+  padding: 80px 20px;
+  background: #f8fafc;
+}
+
+.mission-section .container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1e293b;
+  margin-bottom: 50px;
+}
+
+.mission-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mission-card {
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 15px;
+  border: 2px solid #000;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,.08);
+}
+
+.mission-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.mission-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #1e293b;
+}
+
+.mission-card p {
+  font-size: 20px;
+  color: black;
+  line-height: 1.8;
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width: 992px) {
+  .mission-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+  .mission-section {
+    padding: 60px 15px;
+  }
+
+  .mission-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-card {
+    padding: 30px 20px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .icon {
+    font-size: 45px;
+  }
+
+  .mission-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .mission-card p {
+    font-size: 0.95rem;
+  }
+  .about-buttons {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.about-buttons > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.browse-btn,
+.contact-btn {
+  width: 250px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+  
+}

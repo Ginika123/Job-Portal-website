@@ -1,0 +1,137 @@
+.companies {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.companies .container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.companies .container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.companies .container p {
+  text-align: center;
+  color: black;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+.companies-page {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(350px, 1fr));
+  gap: 30px;
+  padding-left: 5rem;
+}
+
+.company-card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border: 2px solid #ddd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.company-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.company-logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.company-card h2 {
+  color: #222;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.industry {
+  color: #0077ff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.location {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.jobs {
+  color: #28a745;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.view-btn {
+  display: inline-block;
+  background: #0077ff;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.view-btn:hover {
+  background: #005fd1;
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 992px) {
+  .companies-page {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .companies .container h1 {
+    font-size: 2rem;
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 768px) {
+  .companies {
+    padding: 40px 15px;
+  }
+
+  .companies-page {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .company-card {
+    padding: 25px 18px;
+  }
+
+  .company-logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .companies .container h1 {
+    font-size: 1.8rem;
+  }
+
+  .companies .container p {
+    font-size: 16px;
+  }
+}
