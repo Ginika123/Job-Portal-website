@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Hero from "../../components/Hero/Hero";
 import JobList from "../../components/JobList/JobList";
-import useJobs from "../../hooks/useJobs";
+import useJobs from "../../hooks/temp";
 
 function Home() {
   const [search, setSearch] = useState("");
