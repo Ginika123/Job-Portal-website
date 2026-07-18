@@ -1,14 +1,12 @@
 import "./CompanyDetails.css";
 import { Link, useParams } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
-import companies from "../../data/companies";
+import companies from "../../data/Companies";
 
 function CompanyDetails() {
   const { id } = useParams();
 
-  const company = companies.find(
-    (company) => company.id === Number(id)
-  );
+  const company = companies.find((company) => company.id === Number(id));
 
   if (!company) {
     return (
@@ -48,9 +46,7 @@ function CompanyDetails() {
           <div className="company-content">
             <h2>About Company</h2>
 
-            <p className="description">
-              {company.description}
-            </p>
+            <p className="description">{company.description}</p>
 
             <div className="company-stats">
               <div className="stat-card">
@@ -88,8 +84,8 @@ function CompanyDetails() {
               </a>
 
               <Link to="/jobs" className="jobs-btn">
-  View Open Jobs
-</Link>
+                View Open Jobs
+              </Link>
             </div>
           </div>
         </div>
